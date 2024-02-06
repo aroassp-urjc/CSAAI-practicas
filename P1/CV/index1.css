@@ -64,7 +64,7 @@
     }
     
     #c1 {
-        background-color:#b93939;
+        background-color:rgb(255, 115, 0);
     }
     
     #c2 {
@@ -75,7 +75,7 @@
     /* posicionamiento de imágenes https://www.w3schools.com/css/css_positioning.asp */
     
     img {
-      width: 80%;
+      width: 60%;
       height: auto;
     }
     
@@ -107,21 +107,15 @@
       font-weight: normal;
     }
     
-    @font-face {
-      font-family: "Montserrat";
-      src: url('fonts/Montserrat-VariableFont_wght.ttf') format("truetype");
-      font-style: normal;
-      font-weight: normal;
-    }
     
     h1 {
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       font-weight: 100; /* Anchura de las letras*/
-      color:black;
+      color:rgb(0, 0, 0);
       text-align: center;
       letter-spacing: 20px;
       border: solid;
-      border-color: black;
+      border-color: rgb(255, 255, 255);
       border-width: 5px;
       padding: 10px 10px 10px;
     }
@@ -150,10 +144,16 @@
     }
     
     .e2 {
-      color: #b93939;
+      color:rgb(0, 0, 0);
       letter-spacing: 10px; /* Espacio entre letras*/
       padding-left: 12px; /* Margen a la derecha*/
     }
+
+    .e2 {
+        color:rgb(255, 115, 0);
+        letter-spacing: 10px; /* Espacio entre letras*/
+        padding-left: 12px; /* Margen a la derecha*/
+      }
     
     li {
       padding-bottom: 10px; /* Separacion entre los elementos*/
@@ -189,6 +189,6 @@
     }
     
     .enlace {
-      color: #ff0000;
+      color: rgb(255, 115, 0);
     }
     
