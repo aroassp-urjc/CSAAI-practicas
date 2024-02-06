@@ -51,10 +51,16 @@
     .izquierda {
     width: 30%;
     }
+
+    .central {
+        width: 50%;
+        }
     
     .derecha {
-    width: 70%;
+    width: 50%;
     }
+
+    
     
     /* Clear floats despues de las columnas para eliminar la superposición */
     .filla:after {
@@ -137,6 +143,8 @@
       height: 12px; /* Altura*/
       vertical-align: middle; /* Alineamos la imagen y el texto*/
     }
+
+
     
     h2 {
       font-family: Impact, 'Arial Narrow Bold', sans-serif;
