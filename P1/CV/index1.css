@@ -61,7 +61,11 @@
     width: 50%;
     }
 
-
+    .central table img,
+    .derecha table img {
+    width: 100px; /* Ancho deseado */
+    height: 100px; /* Altura deseada */
+    }
     
     /* Clear floats despues de las columnas para eliminar la superposición */
     .filla:after {
@@ -76,6 +80,10 @@
     
     #c2 {
         background-color:rgb(255, 255, 255);
+    }
+
+    #c3 {
+      background-color:rgb(255, 255, 255);
     }
     
     /* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
@@ -122,23 +130,26 @@
       text-align: center;
       letter-spacing: 20px;
       border: solid;
-      border-color: rgb(255, 255, 255);
+      border-color: rgb(219, 0, 0);
       border-width: 5px;
       padding: 10px 10px 10px;
     }
-    
-    .e1 {
+
+    /*LETRAS CONTACTO Y HABILIDADES */
+    .a1 {
       color: rgb(255, 255, 255);
       letter-spacing: 10px;
       line-height: 15px;
     }
     
+    /*NI IDEA */
     .img {
       width: 20px;
       height: 20px;
       vertical-align: middle;
     }
     
+    /*NI IDEA */
     .img1 {
       width: 20px; /* Ancho*/
       height: 12px; /* Altura*/
@@ -146,23 +157,30 @@
     }
 
 
-    
+    /*TIPO LETRAS DATOS,SOBREMI,EXPE */
     h2 {
       font-family: Impact, 'Arial Narrow Bold', sans-serif;
       font-weight: 100;
     }
-    
-    .e2 {
-      color:rgb(0, 0, 0);
-      letter-spacing: 10px; /* Espacio entre letras*/
-      padding-left: 12px; /* Margen a la derecha*/
-    }
-
-    .e2 {
+    /*DATOS PERSONALES */
+    .a2 {
         color:rgb(255, 115, 0);
         letter-spacing: 10px; /* Espacio entre letras*/
         padding-left: 12px; /* Margen a la derecha*/
       }
+
+    /*SOBRE MI */
+    .b2 {
+      color:rgb(255, 115, 0);
+      letter-spacing: 10px; /* Espacio entre letras*/
+      padding-left: 12px; /* Margen a la derecha*/
+    }
+    /*EXPERIENCIA */
+    .c2 {
+      color:rgb(255, 115, 0);
+      letter-spacing: 10px; /* Espacio entre letras*/
+      padding-left: 12px; /* Margen a la derecha*/
+    }
     
     li {
       padding-bottom: 10px; /* Separacion entre los elementos*/
@@ -192,12 +210,25 @@
       font-family: Montserrat, Helvetica, sans-serif;
       font-weight: bold;
     }
-    
+
+    /*LETRAS DE CONTENIDO DE CONTACTO Y HABILIDADES*/
     .blanco {
-      color: white;
+      color: rgb(255, 255, 255);
     }
     
+    /*LETRAS EXPERIENCIAS*/
     .enlace {
       color: rgb(255, 115, 0);
     }
     
+    table {
+      border-collapse: collapse; /* Combina los bordes de las celdas adyacentes */
+      width: 100%; /* Ancho de la tabla */
+  }
+  
+    th, td {
+        border: 2px solid rgb(255, 115, 0); /* Grosor y tipo del borde */
+        padding: 8px; /* Espaciado interno de las celdas */
+        text-align: center; /* Alineación del contenido */
+    }
+  
