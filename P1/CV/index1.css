@@ -207,9 +207,15 @@ p {
 }
 
 /* Estilos para tablas */
+/* Estilos para tablas */
+.table-responsive {
+  overflow-x: auto; /* Agregar desplazamiento horizontal si el contenido excede el ancho del contenedor */
+  white-space: nowrap; /* Evitar que las tablas se envuelvan cuando el ancho es insuficiente */
+}
+
 table {
   border-collapse: collapse; /* Combina los bordes de las celdas adyacentes */
-  width: 100%; /* Ancho de la tabla, puedes ajustar este valor según tus necesidades */
+  width: 100%; /* Ancho de la tabla en dispositivos de pantalla grande */
   margin: 0 auto; /* Centrar la tabla en el contenedor */
 }
 
@@ -219,4 +225,14 @@ th, td {
   text-align: center; /* Alineación del contenido */
   font-size: 15px; /* Reducir el tamaño de la fuente dentro de las celdas */
 }
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 600px) {
+  .table-responsive {
+    overflow-x: scroll; /* Permitir el desplazamiento horizontal en dispositivos móviles */
+  }
   
+  table {
+    width: auto; /* Establecer el ancho automático para permitir que las tablas se ajusten al contenido */
+  }
+}
