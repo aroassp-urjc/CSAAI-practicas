@@ -85,26 +85,8 @@ width: 50%;
   background-color:rgb(255, 255, 255);
 }
 
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 600px) {
-  .columna.central,
-  .columna.derecha {
-      width: 100%; /* Cambia el ancho de ambas columnas al 100% */
-  }
-
-  .columna.central,
-  .columna.derecha {
-      float: none; /* Anula el float en dispositivos móviles */
-  }
-
-  .columna.central {
-      order: 1; /* Cambia el orden de la columna central */
-  }
-
-  .columna.derecha {
-      order: 2; /* Cambia el orden de la columna derecha */
-  }
-}
+/* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
+/* posicionamiento de imágenes https://www.w3schools.com/css/css_positioning.asp */
 
 img {
   width: 60%;
