@@ -28,11 +28,11 @@
 
 /* Estilos para la primera letra (P y F) de la clase .titulo */
 .titulo::first-letter {
-    font-size: 80px; /* Hace grande la primera letra (P) */
+    font-size: 85px; /* Hace grande la primera letra (P) */
 }
 
 .last-letter {
-    font-size: 80px; /* Hace grande la última letra (F) */
+    font-size: 75px; /* Hace grande la última letra (F) */
 }
 
 .titulo:not(:first-letter):not(:last-child) {
@@ -48,173 +48,175 @@
     min-height: 700px;
     }
     
-    .izquierda {
-    width: 30%;
-    }
+.izquierda {
+  width: 30%;
+}
 
-    .central {
+.central {
+  width: 50%;
+}
+
+.derecha {
+width: 50%;
+}
+
+.central table img,
+.derecha table img {
+  width: 100px; /* Ancho deseado */
+  height: 100px; /* Altura deseada */
+}
+
+/* Clear floats despues de las columnas para eliminar la superposición */
+.filla:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    
+#a1 {
+    background-color:rgb(255, 115, 0);
+}
+
+#a2 {
+    background-color:rgb(255, 255, 255);
+}
+
+#a3 {
+  background-color:rgb(255, 255, 255);
+}
+
+/* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
+/* posicionamiento de imágenes https://www.w3schools.com/css/css_positioning.asp */
+
+img {
+  width: 60%;
+  height: auto;
+}
+
+.iresponsive {
+    padding: 0 6px;
+    float: left;
     width: 50%;
-
-    }
-    
-    .derecha {
-    width: 50%;
-    }
-
-    .central table img,
-    .derecha table img {
-    width: 100px; /* Ancho deseado */
-    height: 100px; /* Altura deseada */
-    }
-    
-    /* Clear floats despues de las columnas para eliminar la superposición */
-    .filla:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
-    
-    #a1 {
-        background-color:rgb(255, 115, 0);
-    }
-    
-    #a2 {
-        background-color:rgb(255, 255, 255);
-    }
-
-    #a3 {
-      background-color:rgb(255, 255, 255);
-    }
-    
-    /* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
-    /* posicionamiento de imágenes https://www.w3schools.com/css/css_positioning.asp */
-    
-    img {
-      width: 60%;
-      height: auto;
-    }
-    
-    .iresponsive {
-        padding: 0 6px;
-        float: left;
-        width: 50%;
-      }
-    
-    /* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
-    /* Así conseguimos que el contenido se vea bien en dispositvos móviles */
-    
-    @media screen and (max-width: 1050px) {
-        .columna {
-          width: 100%;
-        }
-    
-        .iresponsive {
-            width: 100%;
-        }
-    }
-    
-    /* Más sobre diseño web responsive https://www.w3schools.com/css/css_rwd_intro.asp */
-    
-    @font-face {
-      font-family: "Impact";
-      src: url('fonts/impact.ttf') format("truetype");
-      font-style: normal;
-      font-weight: normal;
-    }
-    
-    
-    h1 {
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-weight: 100; /* Anchura de las letras*/
-      color:rgb(0, 0, 0);
-      text-align: center;
-      letter-spacing: 20px;
-      border: solid;
-      border-color: rgb(219, 0, 0);
-      border-width: 5px;
-      padding: 10px 10px 10px;
-    }
-
-    /*LETRAS CONTACTO Y HABILIDADES */
-    .b1 {
-      color: rgb(255, 255, 255);
-      letter-spacing: 10px;
-      line-height: 15px;
-    }
-    
-   
-    /*TIPO LETRAS DATOS,SOBREMI,EXPE */
-    h2 {
-      font-family: Impact, 'Arial Narrow Bold', sans-serif;
-      font-weight: 100;
-    }
-    /*DATOS PERSONALES */
-    .b2 {
-        color:rgb(255, 115, 0);
-        letter-spacing: 10px; /* Espacio entre letras*/
-        padding-left: 12px; /* Margen a la derecha*/
-      }
-
-    /*SOBRE MI */
-    .b3 {
-      color:rgb(255, 115, 0);
-      letter-spacing: 10px; /* Espacio entre letras*/
-      padding-left: 12px; /* Margen a la derecha*/
-    }
-    /*EXPERIENCIA */
-    .b4 {
-      color:rgb(255, 115, 0);
-      letter-spacing: 10px; /* Espacio entre letras*/
-      padding-left: 12px; /* Margen a la derecha*/
-    }
-    
-    li {
-      padding-bottom: 10px; /* Separacion entre los elementos*/
-      font-family: Montserrat, Helvetica, sans-serif;
-    }
-    
-    ul,ol {
-      padding-left: 50px;
-    }
-    
-    p {
-      padding-left: 20px;
-      font-family: Montserrat, Helvetica, sans-serif;
-    }
-    
-    .parrafo {
-      padding-left: 13px;
-    }
-    
-    .gif {
-      width: 100%;
-      height: auto;
-    }
-    
-    .piefoto {
-      text-align: center;
-      font-family: Montserrat, Helvetica, sans-serif;
-      font-weight: bold;
-    }
-
-    /*LETRAS DE CONTENIDO DE CONTACTO Y HABILIDADES*/
-    .blanco {
-      color: rgb(255, 255, 255);
-    }
-    
-    /*LETRAS EXPERIENCIAS*/
-    .enlace {
-      color: rgb(255, 115, 0);
-    }
-    
-    table {
-      border-collapse: collapse; /* Combina los bordes de las celdas adyacentes */
-      width: 100%; /* Ancho de la tabla */
   }
-  
-    th, td {
-        border: 2px solid rgb(255, 115, 0); /* Grosor y tipo del borde */
-        padding: 8px; /* Espaciado interno de las celdas */
-        text-align: center; /* Alineación del contenido */
+
+/* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
+/* Así conseguimos que el contenido se vea bien en dispositvos móviles */
+
+@media screen and (max-width: 1050px) {
+    .columna {
+      width: 100%;
     }
+
+    .iresponsive {
+        width: 100%;
+    }
+}
+
+/* Más sobre diseño web responsive https://www.w3schools.com/css/css_rwd_intro.asp */
+
+@font-face {
+  font-family: "Impact";
+  src: url('fonts/impact.ttf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 100; /* Anchura de las letras*/
+  color:rgb(0, 0, 0);
+  text-align: center;
+  letter-spacing: 20px;
+  border: solid;
+  border-color: rgb(219, 0, 0);
+  border-width: 5px;
+  padding: 10px 10px 10px;
+}
+
+/*LETRAS CONTACTO Y HABILIDADES */
+.b1 {
+  color: rgb(255, 255, 255);
+  letter-spacing: 10px;
+  line-height: 15px;
+}
+
+
+/*TIPO LETRAS DATOS,SOBREMI,EXPE */
+h2 {
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  font-weight: 100;
+}
+/*DATOS PERSONALES */
+.b2 {
+    color:rgb(255, 115, 0);
+    letter-spacing: 10px; /* Espacio entre letras*/
+    padding-left: 12px; /* Margen a la derecha*/
+  }
+
+/*SOBRE MI */
+.b3 {
+  color:rgb(255, 115, 0);
+  letter-spacing: 10px; /* Espacio entre letras*/
+  padding-left: 12px; /* Margen a la derecha*/
+}
+/*EXPERIENCIA */
+.b4 {
+  color:rgb(255, 115, 0);
+  letter-spacing: 10px; /* Espacio entre letras*/
+  padding-left: 12px; /* Margen a la derecha*/
+}
+
+li {
+  padding-bottom: 10px; /* Separacion entre los elementos*/
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+ul,ol {
+  padding-left: 50px;
+}
+
+p {
+  padding-left: 20px;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+.parrafo {
+  padding-left: 13px;
+}
+
+.gif {
+  width: 100%;
+  height: auto;
+}
+
+.piefoto {
+  text-align: center;
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/*LETRAS DE CONTENIDO DE CONTACTO Y HABILIDADES*/
+.blanco {
+  color: rgb(255, 255, 255);
+}
+
+/*LETRAS EXPERIENCIAS*/
+.enlace {
+  color: rgb(255, 115, 0);
+}
+
+/* Estilos para tablas */
+table {
+  border-collapse: collapse; /* Combina los bordes de las celdas adyacentes */
+  width: 100%; /* Ancho de la tabla, puedes ajustar este valor según tus necesidades */
+  margin: 0 auto; /* Centrar la tabla en el contenedor */
+}
+
+th, td {
+  border: 1px solid rgb(255, 115, 0); /* Grosor y tipo del borde */
+  padding: 4px; /* Espaciado interno de las celdas */
+  text-align: center; /* Alineación del contenido */
+  font-size: 15px; /* Reducir el tamaño de la fuente dentro de las celdas */
+}
   
