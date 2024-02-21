@@ -14,15 +14,13 @@
 
 /* Estilos para el título */
 .titulo {
-    font-family: Ferbtastic, Arial, sans-serif; /* Utiliza Ferbtastic como la primera opción */
+    font-family: Ferbtastic, sans-serif; /* Utiliza Ferbtastic como la primera opción */
     font-weight: 100; /* Anchura de las letras*/
     font-size: 40px; /* Tamaño de letra */
     color: rgb(255, 115, 0);
     text-align: center;
     letter-spacing: 20px;
-    border: solid;
-    border-color: rgb(0, 19, 226);
-    border-width: 5px;
+    border: 2px solid rgb(0, 19, 226); /* Ajusta el estilo y el grosor del borde */
     padding: 10px 10px 10px;
 }
 
@@ -30,11 +28,9 @@
 .titulo::first-letter {
     font-size: 85px; /* Hace grande la primera letra (P) */
 }
-
 .last-letter {
     font-size: 75px; /* Hace grande la última letra (F) */
 }
-
 .titulo:not(:first-letter):not(:last-child) {
     font-size: inherit; /* Anula el tamaño de letra para todas las letras excepto la primera y la última */
 }
@@ -67,7 +63,7 @@ width: 50%;
 }
 
 /* Clear floats despues de las columnas para eliminar la superposición */
-.filla:after {
+.fila:after {
   content: "";
   display: table;
   clear: both;
@@ -85,54 +81,59 @@ width: 50%;
   background-color:rgb(255, 255, 255);
 }
 
-/* estilos para imágenes https://www.w3schools.com/css/css3_images.asp */
-/* posicionamiento de imágenes https://www.w3schools.com/css/css_positioning.asp */
-
+/* Estilos para imágenes */
 img {
-  width: 60%;
+  width: 100%;
   height: auto;
+}
+/* Estilos para las imágenes de contacto */
+.redes img {
+  width: 20px; /* Ancho deseado para las imágenes de contacto */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+/* Estilos para la imagen principal */
+.imagenprincipal img {
+  display: block; /* Convierte la imagen en un bloque para que pueda ser centrada */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  width: 60%; /* Ancho deseado */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+
+@media screen and (max-width: 1050px) {
+  .izquierda {
+    width: 100%; /* Mantener el ancho original de la columna izquierda */
+}
+
+.central, .derecha {
+    width: 100%; /* Asignar un ancho combinado para las columnas central y derecha */
 }
 
 .iresponsive {
-    padding: 0 6px;
-    float: left;
-    width: 50%;
-  }
-
-/* Responsive layout - cuando el ancho de pantalla es menor a 600px, muestra las columnas apiladas. */
-/* Así conseguimos que el contenido se vea bien en dispositvos móviles */
-
-@media screen and (max-width: 1050px) {
-    .columna {
-      width: 100%;
-    }
-
-    .iresponsive {
-        width: 100%;
-    }
+    width: auto; /* Restablecer el ancho a automático para elementos responsivos */
+}
 }
 
-/* Más sobre diseño web responsive https://www.w3schools.com/css/css_rwd_intro.asp */
-
+/* Fuente personalizada*/
 @font-face {
   font-family: "Impact";
-  src: url('fonts/impact.ttf') format("truetype");
+  src: url('BebasNeue-Regular.ttf') format("truetype");
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 
-h1 {
+/* h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 100; /* Anchura de las letras*/
-  color:rgb(0, 0, 0);
+  /* color:rgb(255, 0, 0);
   text-align: center;
   letter-spacing: 20px;
   border: solid;
-  border-color: rgb(219, 0, 0);
-  border-width: 5px;
-  padding: 10px 10px 10px;
-}
+  border-color: rgb(0, 0, 0);
+  border-width: 50px;
+  padding: 10px 10px 10px; */
+/* }*/
 
 /*LETRAS CONTACTO Y HABILIDADES */
 .b1 {
@@ -144,9 +145,11 @@ h1 {
 
 /*TIPO LETRAS DATOS,SOBREMI,EXPE */
 h2 {
-  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, sans-serif;
   font-weight: 100;
+  font-size: 30px;
 }
+
 /*DATOS PERSONALES */
 .b2 {
     color:rgb(255, 115, 0);
@@ -197,7 +200,7 @@ p {
 }
 
 /*LETRAS DE CONTENIDO DE CONTACTO Y HABILIDADES*/
-.blanco {
+.redes {
   color: rgb(255, 255, 255);
 }
 
@@ -214,7 +217,7 @@ table {
 }
 
 th, td {
-  border: 1px solid rgb(255, 115, 0); /* Grosor y tipo del borde */
+  border: 2px solid rgb(255, 115, 0); /* Grosor y tipo del borde */
   padding: 4px; /* Espaciado interno de las celdas */
   text-align: center; /* Alineación del contenido */
   font-size: 15px; /* Reducir el tamaño de la fuente dentro de las celdas */
