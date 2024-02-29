@@ -30,27 +30,20 @@ body {
     margin: 5%;
 }
 
-h1 {
+h1, h2 {
     font-family: Impact, sans-serif;
     font-weight: 100;
+    color: #ffffff;
     text-align: center;
-    color: #ffffff;
-    text-shadow: black 0.1em 0.1em 0.2em
-}
-
-h2 {
-    font-family: Impact, sans-serif;
-    font-weight: 150;
-    color: #ffffff;
-    text-shadow: black 0.1em 0.1em 0.2em
-}
-
-p, ul {
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+  
+  p, ul {
     color: #000000;
     font-weight: normal;
     font-family: Impact, sans-serif;
-}
-
-.curriculum {
+  }
+  
+  .curriculum {
     color: #ffffff;
-}
+  }
