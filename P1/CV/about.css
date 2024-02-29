@@ -14,23 +14,17 @@
 
 @font-face {
     font-family: "Impact";
-    src: url('Bogart-Medium-trial.ttf') format("truetype");
-    font-style: normal;
-    font-weight: normal;
-  }
-  
-@font-face {
-    font-family: "Montserrat";
-    src: url('Bogart-Medium-trial.ttf') format("truetype");
+    src: url('Impact.ttf') format("truetype");
     font-style: normal;
     font-weight: normal;
 }
+  
 
 body {
     background-image: url(imagenes/phineas-y-ferb.jpg);
     background-position: center;
-    backdrop-filter: blur(5px);
-    filter: grayscale(100%);
+    backdrop-filter: blur(3px);
+    filter: grayscale(80%);
     padding: 30px;
     min-height: 820px;
     margin: 5%;
@@ -46,20 +40,16 @@ h1 {
 
 h2 {
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    font-weight: 100;
+    font-weight: 150;
     color: #ffffff;
     text-shadow: black 0.1em 0.1em 0.2em
 }
 
 p, ul {
-    color: #ffffff;
+    color: #000000;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 .curriculum {
     color: #ffffff;
-}
-
-p, li {
-    font-family: Montserrat, Helvetica, sans-serif;
-    text-shadow: black 0.1em 0.1em 0.2em
 }
