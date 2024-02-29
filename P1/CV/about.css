@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: Impact, sans-serif;
-    src: url('Montserrat-VariableFont_wght.ttf') format("truetype");
+    src: url('Impact.ttf') format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -23,8 +23,8 @@
 body {
     background-image: url(imagenes/phineas-y-ferb.jpg);
     background-position: center;
-    backdrop-filter: blur(3px);
-    filter: grayscale(80%);
+    backdrop-filter: blur(5px);
+    filter: grayscale(60%);
     padding: 30px;
     min-height: 820px;
     margin: 5%;
@@ -41,7 +41,7 @@ h1, h2 {
   p, ul {
     color: #000000;
     font-weight: normal;
-    font-family: Impact;
+    font-family: Impact, sans-serif;
   }
   
   .curriculum {
