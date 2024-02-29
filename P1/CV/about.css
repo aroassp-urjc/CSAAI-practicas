@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: Impact, sans-serif;
-    src: url('Impact.ttf') format("truetype");
+    src: url('Montserrat-VariableFont_wght.ttf') format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -41,7 +41,7 @@ h1, h2 {
   p, ul {
     color: #000000;
     font-weight: normal;
-    font-family: Impact, sans-serif;
+    font-family: Impact;
   }
   
   .curriculum {
