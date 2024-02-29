@@ -4,6 +4,7 @@
 }
 
 
+
 /* -----------TITULO----------------
 
 /* Definición de la fuente Ferbtastic */
@@ -17,11 +18,13 @@
     font-family: Ferbtastic, sans-serif; /* Utiliza Ferbtastic como la primera opción */
     font-weight: 100; /* Anchura de las letras*/
     font-size: 40px; /* Tamaño de letra */
-    color: rgb(255, 115, 0);
+    color: rgb(0, 19, 226);
     text-align: center;
     letter-spacing: 20px;
-    border: 2px solid rgb(0, 19, 226); /* Ajusta el estilo y el grosor del borde */
+    border: 3px solid rgb(0, 19, 226); /* Ajusta el estilo y el grosor del borde */
     padding: 10px 10px 10px;
+    background-color:rgb(255, 115, 0);
+     
 }
 
 /* Estilos para la primera letra (P y F) de la clase .titulo */
@@ -71,6 +74,8 @@ width: 50%;
     
 #a1 {
     background-color:rgb(255, 115, 0);
+    border: 3px solid rgb(0, 34, 255); /* Grosor y tipo del borde */
+    padding: 5px; /* Espaciado alrededor de la imagen */
 }
 
 #a2 {
@@ -86,7 +91,7 @@ img {
   width: 100%;
   height: auto;
 }
-/* Estilos para las imágenes de contacto */
+/* Estilos para las imágenes de contactos */
 .redes img {
   width: 20px; /* Ancho deseado para las imágenes de contacto */
   height: auto; /* Altura automática para mantener la proporción */
@@ -97,6 +102,7 @@ img {
   margin: 0 auto; /* Centra la imagen horizontalmente */
   width: 60%; /* Ancho deseado */
   height: auto; /* Altura automática para mantener la proporción */
+  
 }
 
 
@@ -116,38 +122,27 @@ img {
 
 /* Fuente personalizada*/
 @font-face {
-  font-family: "Impact";
-  src: url('BebasNeue-Regular.ttf') format("truetype");
+  font-family: "Coluna";
+  src: url('Coluna_Rounded.ttf') format("truetype");
   font-style: normal;
   font-weight: bold;
 }
 
-
-/* h1 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: 100; /* Anchura de las letras*/
-  /* color:rgb(255, 0, 0);
-  text-align: center;
-  letter-spacing: 20px;
-  border: solid;
-  border-color: rgb(0, 0, 0);
-  border-width: 50px;
-  padding: 10px 10px 10px; */
-/* }*/
 
 /*LETRAS CONTACTO Y HABILIDADES */
 .b1 {
   color: rgb(255, 255, 255);
   letter-spacing: 10px;
   line-height: 15px;
+  padding-left: 15px;
 }
 
 
 /*TIPO LETRAS DATOS,SOBREMI,EXPE */
 h2 {
-  font-family: Impact, sans-serif;
+  font-family: 'Coluna', sans-serif;
   font-weight: 100;
-  font-size: 30px;
+  font-size: 30px; 
 }
 
 /*DATOS PERSONALES */
@@ -217,9 +212,14 @@ table {
 }
 
 th, td {
-  border: 2px solid rgb(255, 115, 0); /* Grosor y tipo del borde */
-  padding: 4px; /* Espaciado interno de las celdas */
+  border: 3px solid rgb(255, 115, 0); /* Grosor y tipo del borde */
+  padding: px; /* Espaciado interno de las celdas */
   text-align: center; /* Alineación del contenido */
   font-size: 15px; /* Reducir el tamaño de la fuente dentro de las celdas */
+  font-family: 'Bogart', sans-serif; /* Cambiar el tipo de letra */
 }
   
+@font-face {
+  font-family: "Bogart";
+  src: url('Bogart-Medium-trial.ttf') format('truetype'); /* Cambia la ruta según la ubicación de tu archivo de fuente */
+}
