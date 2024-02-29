@@ -13,7 +13,7 @@
 }
 
 @font-face {
-    font-family: "Impact";
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
     src: url('arial.ttf') format("truetype");
     font-style: normal;
     font-weight: normal;
@@ -31,7 +31,7 @@ body {
 }
 
 h1 {
-    font-family:Impact, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
     font-weight: 100;
     text-align: center;
     color: #ffffff;
