@@ -1,35 +1,36 @@
 body {
-    margin: 10px;
+    margin: 0;
+    padding: 0;
     background-position: center;
-    background-image: url('imagen.jpg'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen */
+    background-image: url('stars.png'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen */
     background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
 
 }
 
 @font-face {
-    font-family: 'Zombie';
-    src: url('The\ Zombie\ Birds.ttf') format('truetype'); 
+    font-family: 'Candy';
+    src: url('American\ Captain.ttf') format('truetype'); 
 }
 
 .Titulo {
     text-align: center;
     font-size: 30px;
-    color:  rgb(244, 0, 0);
-    font-family: 'Zombie';
+    color:  rgb(211, 244, 0);
+    font-family: 'Candy';
     letter-spacing: 2px;
 }
 
 
-.Titulo h3 {
-    color:  rgb(0, 255, 0); /* Color para el h3 */
-}
 
 .Cabecera{
     margin: auto; /*Coloca el panel en el centro*/
     width: 300px;
     padding: 3px;
     margin: auto;
+    font-family: 'Candy';
+    letter-spacing: 5px;
+
 }
 
 #contraseña {
@@ -38,7 +39,7 @@ body {
     height: 60px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.36);
-    color: rgb(244, 0, 0);
+    color: rgb(0, 24, 244);
     text-align: center;
 }
 
@@ -46,6 +47,7 @@ body {
     text-align: center;
     font-size: 50px;
     color: rgb(246, 255, 0);
+    
 }
 
 @font-face {
@@ -60,7 +62,7 @@ body {
     border: solid;
     border-color: rgb(17, 0, 255);
     border-radius: 20px;
-    margin: auto; /* Nota: Se ajustó el valor de margin */
+    margin: -25px auto 0; 
     width: 300px; /* Nota: Se establece el ancho */
     font-size: 50px;
 }
@@ -72,28 +74,40 @@ body {
 }
 
 button {
-    width: 6ch;
+    width: 50px;
     height: 50px;
     border-radius: 7px;
     color: rgb(246, 255, 0);
     background-color: rgb(0, 17, 255);
     border-color: rgb(255, 251, 0);
-    font-family: 'about';
+    font-family: 'Candy';
     font-size: 14px;
+    font-size: 20px;
 }
 
 .Controles button {
     width: 75px; /* Ajusta el ancho del botón de los controles */
     height: 40px; /* Ajusta el alto del botón de los controles */
+    font-size: 20px;
+    
 }
 
 .Controles {
     text-align: center;
     font-size: 40px;
-    font-family: 'about';
+    
 }
 
-
+#mensajeEnhorabuena {
+    display: none;
+    background-color: #ff0000; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+    text-align: center; /* Texto centrado */
+    font-size: 20px; /* Tamaño de fuente */
+    margin-top: 20px; /* Margen superior */
+}
 
 
 
