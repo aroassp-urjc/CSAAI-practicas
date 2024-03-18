@@ -9,19 +9,19 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    font-family: 'American';
     
 }
 
 
 @font-face {
     font-family: 'American';
-    src: url('American\ Captain.ttf') format('truetype'); 
+    src: url('American Captain.ttf') format('truetype'); 
 }
 
 .Titulo {
     font-size: 30px;
     color:  rgb(255, 0, 140);
-    font-family: 'American';
     letter-spacing: 2px;
     margin-bottom: 20px;
     text-align: center;
@@ -31,11 +31,11 @@ body {
     width: 300px;
     padding: 3px;
     margin: auto;
-    font-family: 'American';
     letter-spacing: 5px;
     margin-bottom: 20px;
     margin-top: -10px;
     text-align: center;
+    
 }
 
 #contraseña {
@@ -45,6 +45,7 @@ body {
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.36);
     color: rgb(0, 24, 244);
+    line-height: 60px;
 }
 
 #cronometro {
@@ -61,6 +62,7 @@ body {
     border: solid;
     border-color: rgb(17, 0, 255);
     border-radius: 20px;
+    border-width: 5px;
     margin: -25px auto 0; 
     width: 300px; 
 }
@@ -75,25 +77,24 @@ button {
     width: 50px;
     height: 50px;
     border-radius: 7px;
-    color: rgb(246, 255, 0);
+    color: rgb(255, 255, 0);
     background-color: rgb(0, 17, 255);
     border-color: rgb(255, 251, 0);
+    border-width: 3px;
     font-family: 'American';
-    font-size: 20px;
+    font-size: 25px;
     margin: 5px;
 }
 
 .Controles button {
     width: 75px; 
     height: 40px; 
-    font-size: 20px;
-    
+    font-size: 25px;
 }
 
 .Controles {
     text-align: center;
     font-size: 40px;
-    
 }
 
 #mensajeEnhorabuena {
