@@ -13,6 +13,7 @@ const gui = {
     start : document.getElementById("start"),
     stop : document.getElementById("stop"),
     reset : document.getElementById("reset")
+    
 }
 
 //-- Definir un objeto cronómetro
@@ -61,7 +62,7 @@ function evaluar(valor) {
     
     if (guess === 4) {
         crono.stop();
-        cronometroD.style.color = "yellow";
+        cronometroD.style.color = "black";
         document.body.style.backgroundImage = 'url("starsgreen.png")';
         document.getElementById("mensajeEnhorabuena").style.display = "block";
 

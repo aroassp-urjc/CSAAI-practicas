@@ -1,36 +1,41 @@
 body {
     margin: 0;
     padding: 0;
-    background-position: center;
-    background-image: url('stars.png'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen */
-    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-
+    background-image: url('stars.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
 }
 
+
 @font-face {
-    font-family: 'Candy';
+    font-family: 'American';
     src: url('American\ Captain.ttf') format('truetype'); 
 }
 
 .Titulo {
-    text-align: center;
     font-size: 30px;
-    color:  rgb(211, 244, 0);
-    font-family: 'Candy';
+    color:  rgb(255, 0, 140);
+    font-family: 'American';
     letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-
-
 .Cabecera{
-    margin: auto; /*Coloca el panel en el centro*/
     width: 300px;
     padding: 3px;
     margin: auto;
-    font-family: 'Candy';
+    font-family: 'American';
     letter-spacing: 5px;
-
+    margin-bottom: 20px;
+    margin-top: -10px;
+    text-align: center;
 }
 
 #contraseña {
@@ -40,31 +45,24 @@ body {
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.36);
     color: rgb(0, 24, 244);
-    text-align: center;
 }
 
 #cronometro {
-    text-align: center;
     font-size: 50px;
     color: rgb(246, 255, 0);
+    margin-bottom: 5px;
+    margin-top: 5px;
     
 }
 
-@font-face {
-    font-family: 'about';
-    src: url('about.TTF') format('truetype'); 
-}
-
 .Teclado {
-    text-align: center;
     background-color: rgba(255, 255, 255, 0.36);
-    padding: 5px; /* Nota: Se ajustó el valor de padding */
+    padding: 5px; 
     border: solid;
     border-color: rgb(17, 0, 255);
     border-radius: 20px;
     margin: -25px auto 0; 
-    width: 300px; /* Nota: Se establece el ancho */
-    font-size: 50px;
+    width: 300px; 
 }
 
 .Fila {
@@ -80,14 +78,14 @@ button {
     color: rgb(246, 255, 0);
     background-color: rgb(0, 17, 255);
     border-color: rgb(255, 251, 0);
-    font-family: 'Candy';
-    font-size: 14px;
+    font-family: 'American';
     font-size: 20px;
+    margin: 5px;
 }
 
 .Controles button {
-    width: 75px; /* Ajusta el ancho del botón de los controles */
-    height: 40px; /* Ajusta el alto del botón de los controles */
+    width: 75px; 
+    height: 40px; 
     font-size: 20px;
     
 }
@@ -99,14 +97,13 @@ button {
 }
 
 #mensajeEnhorabuena {
-    display: none;
-    background-color: #ff0000; /* Color de fondo verde */
-    color: white; /* Color del texto blanco */
-    padding: 10px; /* Espaciado interno */
-    border-radius: 5px; /* Borde redondeado */
-    text-align: center; /* Texto centrado */
-    font-size: 20px; /* Tamaño de fuente */
-    margin-top: 20px; /* Margen superior */
+    background-color: #ff0000; 
+    color: white; 
+    padding: 3px; 
+    border-radius: 5px; 
+    text-align: center;
+    font-size: 15px; 
+    margin-bottom: 10px;
 }
 
 
