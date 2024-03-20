@@ -61,7 +61,7 @@ body {
     padding: 5px; 
     border: solid;
     border-color: rgb(17, 0, 255);
-    border-radius: 20px;
+    border-radius: 10px;
     border-width: 5px;
     margin: -25px auto 0; 
     width: 300px; 
@@ -98,13 +98,14 @@ button {
 }
 
 #mensajeEnhorabuena {
-    background-color: #ff0000; 
-    color: white; 
+    background-color: #26ff00; 
+    color: rgb(0, 0, 0); 
     padding: 3px; 
     border-radius: 5px; 
     text-align: center;
-    font-size: 15px; 
+    font-size: 20px; 
     margin-bottom: 10px;
+    font-family: 'American';
 }
 
 

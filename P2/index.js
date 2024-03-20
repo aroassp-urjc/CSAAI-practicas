@@ -62,7 +62,7 @@ function evaluar(valor) {
     
     if (guess === 4) {
         crono.stop();
-        cronometroD.style.color = "black";
+        cronometroD.style.color = "red";
         document.body.style.backgroundImage = 'url("starsgreen.png")';
         document.getElementById("mensajeEnhorabuena").style.display = "block";
 
