@@ -38,7 +38,7 @@ gui.stop.onclick = () => {
 gui.reset.onclick = () => {
     console.log("Reset!");
     crono.reset();
-    //-- Recarga la página para volver a empezar
+    //-- Recarga la página para empezar de nuevo
     window.location.reload(); 
 }
 
