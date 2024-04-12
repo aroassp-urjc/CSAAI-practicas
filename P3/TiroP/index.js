@@ -143,7 +143,7 @@ function launch() {
 }
 
 // Retrollamada del botón de disparo
-gui.btnDisparar.onclick = () => {
+gui.btnDisparar.onclick = function() {
   if (!block) {
     launch();
     crono.start();
@@ -152,7 +152,7 @@ gui.btnDisparar.onclick = () => {
 }
 
 // Retrollamada del botón de inicio
-gui.btnIniciar.onclick = () => {
+gui.btnIniciar.onclick = function() {
   location.reload();
 }
 
@@ -162,11 +162,11 @@ function getRandomInt(min, max) {
 }
 
 // Mostrar valor de la interfaz de velocidad
-gui.rangeV.oninput = () => {
+gui.rangeV.oninput = function() {
   gui.rangeVdisp.innerHTML = gui.rangeV.value;
 }
 
 // Mostrar valor de la interfaz de ángulo
-gui.rangeAng.oninput = () => {
+gui.rangeAng.oninput = function() {
   gui.rangeAngdisp.innerHTML = gui.rangeAng.value;
 }
