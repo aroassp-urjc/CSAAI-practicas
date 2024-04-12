@@ -1,15 +1,15 @@
-// Elementos GUI
+// Elementos de la gui
 const gui = {
   display: document.getElementById("cronometro"),
   rangeV: document.getElementById("range_v"),
   rangeVdisp: document.getElementById("range_vdisp"),
   rangeAng: document.getElementById("range_ang"),
   rangeAngdisp: document.getElementById("range_angdisp"),
-  btnLanzar: document.getElementById("btnLanzar"),
+  btnDisparar: document.getElementById("btnDisparar"),
   btnIniciar: document.getElementById("btnIniciar")
 };
 
-// Definir objeto cronómetro
+// Definir un objeto cronómetr
 const crono = new Crono(gui.display);
 
 // Declarar variables y objetos
@@ -19,7 +19,7 @@ const piscina = document.getElementById("piscina");
 const piscina_pelota = document.getElementById("piscina_pelota");
 const pelota = document.getElementById("pelota");
 
-// Dimensiones del canvas
+// Dimensiones canvas
 const canvasWidth = 700;
 const canvasHeight = 400;
 canvas.width = canvasWidth;
@@ -44,14 +44,14 @@ let velp, angp;
 const gravity = 9.8;
 let time = 0;
 
-// Variable para controlar el uso de botones
+// Variable controlar el uso de botones
 let block = false;
 
-// Variables para colisión y victoria
+// Variables colisión y victoria
 let collision = false;
 let victory;
 
-// Función para pintar el objetivo
+// Pintar el objetivo
 function drawTarget(x, y, img) {
   const radius = 25;
 
@@ -61,7 +61,7 @@ function drawTarget(x, y, img) {
   ctx.closePath();
 }
 
-// Función para pintar el proyectil
+// Pintar el proyectil
 function drawProjectile(x, y, lx, ly) {
   ctx.beginPath();
   ctx.rect(x, y, lx, ly);
@@ -69,7 +69,7 @@ function drawProjectile(x, y, lx, ly) {
   ctx.closePath();
 }
 
-// Función para calcular la trayectoria del proyectil
+// Calcular la trayectoria del proyectil
 function calculateProjectilePath() {
   xp = xop + velp * Math.cos(angp * Math.PI / 180) * time;
   yp = yop + velp * Math.sin(angp * Math.PI / 180) * time - 0.5 * gravity * time * time;
@@ -85,10 +85,10 @@ piscina.onload = () => {
   ctx.drawImage(piscina, xo - 25, yo - 25);
 };
 
-// Dibujar el objetivo
+// Dibujar objetivo
 drawTarget(xo, yo, piscina);
 
-// Dibujar el proyectil en la posición inicial
+// Dibujar proyectil en la posición inicial
 drawProjectile(xop, canvasHeight - yop, 50, 50);
 
 // Función principal de actualización
@@ -142,8 +142,8 @@ function launch() {
   }
 }
 
-// Función de retrollamada del botón de disparo
-gui.btnLanzar.onclick = () => {
+// Retrollamada del botón de disparo
+gui.btnDisparar.onclick = () => {
   if (!block) {
     launch();
     crono.start();
@@ -151,22 +151,22 @@ gui.btnLanzar.onclick = () => {
   block = true;
 }
 
-// Función de retrollamada del botón de inicio
+// Retrollamada del botón de inicio
 gui.btnIniciar.onclick = () => {
   location.reload();
 }
 
-// Función para generar número aleatorio para la posición del objetivo
+// Generar número aleatorio para la posición del objetivo
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-// Función para mostrar valor de la interfaz de velocidad
+// Mostrar valor de la interfaz de velocidad
 gui.rangeV.oninput = () => {
   gui.rangeVdisp.innerHTML = gui.rangeV.value;
 }
 
-// Función para mostrar valor de la interfaz de ángulo
+// Mostrar valor de la interfaz de ángulo
 gui.rangeAng.oninput = () => {
   gui.rangeAngdisp.innerHTML = gui.rangeAng.value;
 }

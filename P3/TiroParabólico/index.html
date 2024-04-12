@@ -4,48 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiro parabólico de la pelota</title>
+    <title>Tiro parabólico</title>
 
-    <!-- Hoja de estilo -->
-    <link rel="stylesheet" href="index.css">
-
-    <!-- Código javascript -->
     <script src="index.js" defer></script>
     <script src="crono.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="pelota.png">
 
 </head>
 <body>
     <div class="Titulo">
         <h1> TIRO PARABÓLICO DE LA PELOTA</h1>
     </div>
-    <div class="Container">
+
+    <div class="Controles">
         <canvas id="tiro"></canvas>
         <img src="piscina.png" alt="No encontrada" id="piscina">
         <img src="piscinapelota.png" alt="No encontrada" id="piscina_pelota">
         <img src="pelota.png" alt="No encontrada" id="pelota">
 
         <div>
-            
             <p>
                 <b>Timer:</b> <br>
                 <p id="cronometro">0:0:0</p>
             </p>
-           
 
-            <p>
-                <b>Velocidad del disparo:</b> <br>
-                <input type="range" id="range_v" name="range_v" min="0" max="100" value="50">
-                <span id="range_vdisp">50</span>
-            </p>
             <p>  
                 <b>Ángulo del disparo:</b> <br>
                 <input type="range" id="range_ang" name="range_ang" min="0" max="90" value="45">
                 <span id="range_angdisp">45</span>
             </p>
+            
+            <p>
+                <b>Velocidad del disparo:</b> <br>
+                <input type="range" id="range_v" name="range_v" min="0" max="100" value="50">
+                <span id="range_vdisp">50</span>
+            </p>
 
-            <input type="button" id="btnLanzar" value="Lanzar">
+            
+
+            <input type="button" id="btnDisparar" value="Disparar">
             <input type="button" id="btnIniciar" value="Iniciar">
         </div>
+        
     </div>
 </body>
 </html>

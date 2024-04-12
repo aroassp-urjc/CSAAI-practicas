@@ -2,7 +2,7 @@ body {
   margin: auto;
 }
 
-.Container {
+.Controles{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,26 +20,22 @@ body {
 #tiro {
   border-style: solid;
   border-color: rgb(0, 132, 255);
-  background-image: url("fondo2.avif");
+  background-image: url("fondo.avif");
   background-size: cover; 
-  background-position: center; /* Centrado vertical y horizontal */
+  background-position: center; 
   background-repeat: no-repeat;
-  width: 70%; /* Ancho del 70% del contenedor */
-  max-width: 800px; /* Ancho máximo para evitar que se extienda demasiado */
-  margin-left: 10%; /* Margen izquierdo del 10% del contenedor */
-  margin-right: 10%; /* Margen derecho del 10% del contenedor */
+  width: 70%; 
+  max-width: 800px; 
+  margin-left: 10%; 
+  margin-right: 10%; 
 }
    
-/* Imagen deshabilitada
-Se usa para leerla desde js y
-meterla en el canvas */
 #pelota {
   display: none;
 }
 
 #piscina {
   display: none;
-
 }
 
 #piscina_pelota {
