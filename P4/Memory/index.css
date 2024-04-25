@@ -1,5 +1,5 @@
 body {
-    background-image: url('fondo2.jpg');
+    background-image: url('fondo4.jpg');
 }
 
 @font-face {
@@ -16,7 +16,7 @@ html {
 
 .game {
     position: absolute;
-    top: 75%;
+    top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -45,7 +45,7 @@ button {
 }
 
 .display {
-    color: #ff6600;
+    color: #000000;
     font-size: 14pt;
 
 }
@@ -54,7 +54,7 @@ button {
     position: relative;
     background-color: #0011fb;
     clear: both;
-    
+    font-family: 'Chatlong';
 }
 
 .tablero,
@@ -95,7 +95,7 @@ button {
     border-radius: 5px;
     width: 100%;
     height: 100%;
-    background: #ff8400;
+    background: #fbff00;
     transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
     backface-visibility: hidden;
 }
@@ -146,11 +146,12 @@ button {
 
 
 .titulo {
-    letter-spacing: 30px;
-    margin-top: 30px;
+    letter-spacing: 20px;
+    margin-top: 40px;
     text-align: center;
     font-family: 'Chatlong';
-    color: #ff6600;
+    color: #e5ff00;
+
 }
 
 p {
@@ -158,7 +159,7 @@ p {
     text-align: center;
     font-size: 18px;
     font-family: 'Chatlong'; 
-    color: #ff9046;
+    color: #000000;
 }
 
 .opciones {
@@ -196,6 +197,6 @@ div {
     display: block;
 }
 
-.dimension {
+.nivel {
     color: #eeff00;
 }
