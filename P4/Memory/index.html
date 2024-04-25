@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Memory </title>
+
+        <link rel="stylesheet" href="index.css"/>
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <div class="text">
+            <h1 class="titulo">MEMORY GAME</h1>
+            <p>Seleccione un nivel antes de comenzar</p>
+            <p>Una vez seleccionado solo puedes cambiar si reinicias el juego</p>
+        
+            <div class="opciones">
+                <select id="nivel">
+                    <option value="0" selected>Seleccione un nivel</option>
+                    <option value="2">Nivel Fácil</option>
+                    <option value="4">Nivel Medio</option>
+                    <option value="6">Nivel Difícil</option>
+                </select>
+            </div><br>
+
+            <div class="controles">
+                <span><button type="button" id="start">Comenzar</button></span>
+                <span><button type="button" id="reseat">Reiniciar</button></span>
+            </div>
+                
+            <div class="display"><br>
+                <div class="movimientos">Movimientos: 0</div>
+                <div class="timer">Tiempo: 0 sec</div>
+            </div>
+        </div>
+
+        <div class="game">
+            <div class="grid-container">
+                <div class="tablero"></div>    
+                <div class="win"></div>
+            </div>
+        </div>    
+    </body>
+</html>
