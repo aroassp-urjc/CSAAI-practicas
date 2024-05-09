@@ -175,6 +175,8 @@ drawNet(redAleatoria, rutaMinima);
 // Mostrar la ruta mínima y el tiempo total de transmisión en la consola
 console.log("Ruta mínima:", rutaMinima);
 console.log("Tiempo total de transmisión:", tiempoTotalS);
-mostrarMensaje(`Ruta mínima: ${rutaMinima.map(nodo => `N${nodo.id}`).join(" -> ")}`);
-mostrarMensaje(`Tiempo total de transmisión: ${tiempoTotalS.toFixed(2)} segundos`);
+mostrarMensaje("Ruta mínima: " + rutaMinima.map(function(nodo) {
+  return "N" + nodo.id;
+}).join(" -> "));
+mostrarMensaje("Tiempo total de transmisión: " + tiempoTotalS.toFixed(2) + " segundos");
 }
