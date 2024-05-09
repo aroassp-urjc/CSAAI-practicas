@@ -1,5 +1,19 @@
+#gameContainer {
+  padding: 20px; 
+}
+
+#canvasContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 400px; 
+}
+
 canvas {
   border: 1px solid black;
+  width: 60%;
+  height: 105%;
 }
 
 .controls {
